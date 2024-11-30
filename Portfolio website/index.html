@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <nav id="nav-box">
+            <div class="nav_logo" id="logo"><h1>Portfolio</h1></div>
+            <ul class="nav_links" id="nav_links">
+                <li class="nav_link"><a href="www.facebook.com" id="link1">About</a></li>
+                <li class="nav_link"><a href="#" id="link2">Portfolio</a></li>
+                <li class="nav_link"><a href="#" id="link3">Contact</a></li>
+            </ul>
+            <div id="btn" onclick="darkMode()">
+                <i class="fa-solid fa-sun" id="sun-icon"></i> 
+                <i class="fa-solid fa-moon nav-animation" id="moon-icon"></i>
+            </div>
+            <div id="menu-btn">
+                <i class="fa-solid fa-bars" id="open-btn"></i>
+                <i class="fa-solid fa-xmark" id="close-btn"></i>
+            </div>
+        </nav>
+        <div class="hero" id="hero">
+            <div class="left-box">
+                <h1 id="hero_h1">I'm <span id="span-box">Ali Hussain Soomro</span></h1>
+                <p id="hero_p">Skilled front-end developer expert in HTML CSS Tailwind CSS and Javascript</p>
+                <div class="hero_btn"><button id="hero-btn">Contact Me</button></div>
+            </div>
+            <div class="right-box" class="hero_animation">
+                <span class="socials">
+                    <ul>
+                        <li class="hero_li"><div id="div-line-1"></div></li>
+                        <li class="hero_li"><a href="#" id="fb-icon"><i class="fa-brands fa-facebook"></i></a></li>
+                        <li class="hero_li"><a href="#" id="tw-icon"><i class="fa-brands fa-twitter"></i></a></li>
+                        <li class="hero_li"><a href="#" id="li-icon"><i class="fa-brands fa-linkedin-in"></i></a></li>
+                        <li class="hero_li"><a href="#" id="wh-icon"><i class="fa-brands fa-whatsapp"></i></a></li>
+                        <li class="hero_li"><div id="div-line-2"></div></li>
+                    </ul>
+                </span>
+                <img src="/assets/img-1.png" alt="" id="hero_img">
+            </div>
+        </div>
+    </header>
+    <!-- About Section -->  
+    <section id="about" class="about">
+        <div class="about-box" id="about-animation">
+            <h1>About Me</h1>
+            <p id="p1">Hi! I’m Ali Hussain, a passionate and detail-oriented Front-End Developer with expertise in <span id="about-span">HTML, CSS, Tailwind CSS, and JavaScript</span>. I specialize in crafting modern, responsive, and user-friendly web interfaces that deliver exceptional user experiences.</p>
+            <p id="p2">With a deep understanding of web standards and design principles, I thrive on turning ideas into clean, functional, and visually appealing code. Whether it’s building a sleek landing page, a complex web application, or optimizing existing designs for performance, I approach every project with creativity, precision, and a commitment to excellence.</p>
+            <h3 id="h3">What I Bring to the Table:</h3>
+            <ul>
+                <li class="li-ani">Expertise in creating pixel-perfect designs with HTML and CSS.</li>
+                <li class="li-ani">Proficiency in Tailwind CSS for fast and efficient UI development.</li>
+                <li class="li-ani">Advanced skills in JavaScript for adding interactivity and functionality to websites.</li>
+                <li class="li-ani">A strong focus on responsiveness, ensuring seamless experiences across all devices.</li>
+                <li class="li-ani">Experience collaborating with clients and teams to bring visions to life.</li>
+            </ul>
+            <p id="p3">When I’m not coding, I enjoy Exploring new technologies and experimenting with creative coding projects, which keeps my creativity flowing.</p>
+        </div>
+    </section>
+        <!-- Skills section -->
+        <section id="skills" class="skills">
+            <div class="skills-box">
+                <h1 id="mySkills">My Skills</h1>
+                <div class="boxes">
+                    <div class="box" id="sk-box1">
+                        <img src="assets/html.png" alt="">
+                        HTML
+                    </div>
+                    <div class="box" id="sk-box2">
+                        <img src="assets/CSS.png" alt="" id="css-icon">
+                        CSS
+                    </div>
+                    <div class="box" id="sk-box3">
+                        <img src="assets/Tailwind.png" alt="">
+                        Tailwind CSS                        </div>
+                    <div class="box" id="sk-box4">
+                        <img src="assets/Javascript.png" alt="">
+                        JavaScript
+                    </div>
+                    <div class="box" id="sk-box5">
+                        <img src="assets/Typescript.png" alt="">
+                        TypeScript
+                    </div>
+                    <div class="box" id="sk-box6">
+                        <img src="assets/next-js.png" alt="">
+                        Next Js
+                    </div>                      
+                </div>
+            </section>
+            
+        <!-- Portfolio section -->
+        <section id="portfolio" class="portfolio">
+            <div class="portfolio-box">
+                <h1>Portfolio</h1>
+                <div class="wrapper">
+                    <div class="gallery">
+                        <div class="image" id="p-img-1">
+                            <span class="portfolio-image" id="portfolio-image-1">
+                                <img src="./assets/portfolio-img-1.jpg" alt="">
+                                <span id="text-box-1" class="text-box">
+                                    <div>
+                                        <h2>Portfolio Website</h2>
+                                        <p>Amazing design with attractive effects</p>
+                                        <button id="btn1">View</button>
+                                    </div>
+                                </span>
+                            </span>
+                        </div>
+                        <div class="image" id="p-img-2">
+                            <span class="portfolio-image" id="portfolio-image-2">
+                                <img src="./assets/portfolio-img-2.jpg" alt="">
+                                <span id="text-box-2" class="text-box">
+                                    <div>
+                                        <h2>Portfolio Website</h2>
+                                        <p>Amazing design with attractive effects</p>
+                                        <button id="btn2">View</button>
+                                    </div> 
+                                </span>
+                            </span>
+                        </div>
+                        <div class="image" id="p-img-3">
+                            <span class="portfolio-image" id="portfolio-image-3">
+                                <img src="./assets/portfolio-img-3.jfif" alt="">
+                                <span id="text-box-3" class="text-box">
+                                    <div>
+                                        <h2>Portfolio Website</h2>
+                                        <p>Amazing design with attractive effects</p>
+                                        <button id="btn3">View</button>
+                                    </div>
+                                    
+                                </span>
+                            </span>
+                        </div>
+                        <div class="image" id="p-img-4">
+                            <span class="portfolio-image" id="portfolio-image-4">
+                                <img src="./assets/portfolio-img-4.jpg" alt="">
+                                <span id="text-box-4" class="text-box">
+                                    <div>
+                                        <h2>Portfolio Website</h2>
+                                        <p>Amazing design with attractive effects</p>
+                                        <button id="btn4">View</button>
+                                    </div>
+                                    
+                                </span>
+                            </span>
+                        </div>
+                        <div class="image" id="p-img-5">
+                            <span class="portfolio-image" id="portfolio-image-5">
+                                <img src="./assets/portfolio-img-5.avif" alt="">
+                                <span id="text-box-5" class="text-box">
+                                    <div>
+                                        <h2>Portfolio Website</h2>
+                                        <p>Amazing design with attractive effects</p>
+                                        <button id="btn5">View</button>
+                                    </div>
+                                    
+                                </span>
+                            </span>
+                        </div>
+                        <div class="image" id="p-img-6">
+                            <span class="portfolio-image" id="portfolio-image-6">
+                                <img src="./assets/portfolio-img-6.png" alt="">
+                                <span id="text-box-6" class="text-box">
+                                    <div>
+                                        <h2>Portfolio Website</h2>
+                                        <p>Amazing design with attractive effects</p>
+                                        <button id="btn6">View</button>
+                                    </div>
+                                    
+                                </span>
+                            </span>
+                        </div>
+                    </div>
+                </div> 
+                <button id="portfolio-btn">View More </button>                                             
+            </div>
+        </section>
+
+         <!-- Experience section -->
+         <section class="experience">
+            <div class="experience-box">
+                <h1>Experience</h1>
+                <div class="x-box">
+                    <p class="year">2020</p>
+                    <div class="cl">
+                        <div class="circle" id="circle1"></div>
+                        <div class="line" id="line1"></div>
+                    </div>
+                    <div class="x-content">
+                        <h2 id="xc1">HTML CSS & Tailwind</h2>
+                        <h4 id="xc2">Front End Designing</h4>
+                        <p id="xc3">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Enim nesciunt officia rerum, perferendis temporibus eum est amet asperiores blanditiis iste ipsa, 
+                            accusamus mollitia. Omnis, saepe error sint est vitae quibusdam,
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Enim nesciunt officia rerum, perferendis temporibus eum est amet asperiores blanditiis iste ipsa, 
+                            accusamus mollitia. Omnis, saepe error sint est vitae quibusdam,
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Enim nesciunt officia rerum, perferendis temporibus eum est amet asperiores blanditiis iste ipsa, 
+                            accusamus mollitia. Omnis, saepe error sint est vitae quibusdam,
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        </p>
+                    </div>
+                </div>
+                <div class="x-box">
+                    <p class="year">2020</p>
+                    <div class="cl">
+                        <div class="circle" id="circle2"></div>
+                        <div class="line" id="line2"></div>
+                    </div>
+                    <div class="x-content">
+                        <h2 id="xc4">JavaScript Developer</h2>
+                        <h4 id="xc5">Interactivity & Animation</h4>
+                        <p id="xc6">Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Enim nesciunt officia rerum, perferendis temporibus eum est amet asperiores blanditiis iste ipsa, 
+                            accusamus mollitia. Omnis, saepe error sint est vitae quibusdam,
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Enim nesciunt officia rerum, perferendis temporibus eum est amet asperiores blanditiis iste ipsa, 
+                            accusamus mollitia. Omnis, saepe error sint est vitae quibusdam,
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                            Enim nesciunt officia rerum, perferendis temporibus eum est amet asperiores blanditiis iste ipsa, 
+                            accusamus mollitia. Omnis, saepe error sint est vitae quibusdam,
+                            Lorem ipsum dolor sit amet, consectetur adipisicing elit. 
+                        </p>
+                    </div>
+                </div>                          
+            </div>
+        </section>
+
+        <!-- Testimonial section -->
+        <section id="testimonial" class="testimonial">
+            <div class="testimonial-box-1">
+                <h1 id="test-1">Testimonial</h1>
+                <p id="test-2"><span id="testi-span-1">The design quality,</span> 
+                    flexibility, documentation and support  are all absolutely 
+                    <span id="testi-span-2">excelent.</span> I buy the Aveda theme for all my clients,
+                    knowing that whatever they require, Aveda Will be able to deliver.
+                </p>
+                <div>
+                    <h3 id="test-3">Josef Sharen</h3>
+                    <p id="test-4">CEO, Omisoft</p> 
+                </div>
+            </div>
+            <div class="testimonial-img">
+                <div id="testi-div"></div>
+                <img src="./assets/img.png" alt="">
+            </div>
+        </section>
+
+         <!-- Footer -->
+         <footer>
+            <div class="f-box-1">
+                <div class="bor-box-1" id="bor-box-1"></div>
+                <div class="f-heading"><h1>Contact Me</h1></div>
+                <div class="bor-box-1" id="bor-box-2"></div>
+            </div>
+
+
+            <div class="f-contact">
+                <div class="f-contact-box">
+                    <div class="fc-box" id="fc-box-1"> <i class="fa-regular fa-envelope" id="email-icon"></i> xyz@mail.com</div>
+                    <div class="fc-box" id="fc-box-2"><i class="fa-solid fa-phone" id="phone-icon"></i> +9200000000000</div>
+                </div>
+                <div class="fc-box" id="fc-box-3"><i class="fa-solid fa-location-dot" id="location-icon"></i> Karachi, Sindh, Pakistan</div> 
+            </div>
+
+
+            <div class="f-box-2">
+                <div class="bor-box-2" id="bor-box-3"></div>
+                <div class="f-socials">
+                    <ul>
+                        <li><a href="#"><i class="fa-brands fa-facebook" id="fb"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-twitter" id="tw"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-linkedin-in" id="li"></i></a></li>
+                        <li><a href="#"><i class="fa-brands fa-whatsapp" id="wh"></i></a></li>
+                    </ul>
+                </div>
+                <div class="bor-box-2" id="bor-box-4"></div>
+            </div>
+            <div class="bot-box" id="bot-box">
+                <h2>“Thanks for Scrolling”</h2>
+            </div>
+         </footer>
+    <!-- Linked javascript file -->
+    <script src="animation/gsap.min.js"></script>
+    <script src="animation/ScrollTrigger.min.js"></script>
+    <script src="animation/script.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
