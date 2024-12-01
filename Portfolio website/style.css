@@ -852,6 +852,9 @@ footer{
         position: absolute;
         right: 14%;
     }
+	.hero .left-box h1{
+    font-size: 32px;
+    }
     .boxes{
         width: 100%;
         display: grid;
