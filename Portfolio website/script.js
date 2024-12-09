@@ -1,3 +1,5 @@
+let header = document.getElementById("header");
+let hero_img = document.getElementById("hero_img");
 let suniconhide = document.getElementById("sun-icon");
 let showmoon = document.getElementById("moon-icon");
 let about = document.getElementById("about");
@@ -124,6 +126,8 @@ function darkMode(){
     suniconhide.classList.toggle("sun-icon-hide");
     showmoon.classList.toggle("show-moon");
     document.body.classList.toggle('dark-mode');
+    header.classList.toggle("header-dark");
+    hero_img.classList.toggle("hero_img_dark");
     about.classList.toggle("about-dark");
     skills.classList.toggle("skills-dark");
     portfolio.classList.toggle("portfolio-dark");
@@ -191,9 +195,12 @@ function darkMode(){
        nav_links.style.transform = "translateY(0)";
        openMenuBtn.style.display = "none";
        closeMenuBtn.style.display = "block";
+       navbox.style.paddingBottom = "150px";
+
     })
     closeMenuBtn.addEventListener("click", () => {
         nav_links.style.transform = "translateY(-100%)";
         closeMenuBtn.style.display = "none";
         openMenuBtn.style.display = "block";
+        navbox.style.paddingBottom = "30px";
      })
